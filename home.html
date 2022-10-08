@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" href="css/glide.core.min.css">
+<link rel="stylesheet" href="css/glide.theme.min.css">
+
+  </head>
+  <body>
+    <div style="align-items: center;">
+    <h1>Create Your Own Box!</h1>
+    <h3 id="min">Min: 3</h3>
+    <h3 id="max">Max: 5</h3>
+</div>
+<div id="wrapper">
+    <div id="box"><img src="images/Box.png" alt="" class="box">
+        <form id="info" method="post" action="/cgi-bin/formhandler.cgi">
+            <ul>
+                <li><label id="image1"></label></li>
+                <li><label id="image2"></label></li>
+                <li><label id="image3"></label></li>
+                <li><label id="image4"></label></li>
+                <li><label id="image5"></label></li>
+            </ul>
+
+            <h2 id="totalPrice"></h2>
+        </form>
+
+    </div>
+</div>
+
+<br>
+<br>
+
+<div style="text-align: center;">
+    <h4>Please select from below to add to box</h4>
+</div>
+
+<div class="container" style="align-items: center;">
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides" id="glide_slides">
+                <li class="glide__slide"><img src="WhatsApp-Image-2022-10-06-at-3.57.09-AM.webp" name="choc chip cookie" onclick="SetImageName(this.name)"> <h2>36</h2></li>
+                <li class="glide__slide"><img src="IMG_7752.webp" name="brownie" onclick="SetImageName(this.name)"><h2>36</h2> </li>
+                <li class="glide__slide"><img src="IMG_7751-1.webp" name="sugar-coated gummy" onclick="SetImageName(this.name)"><h2>33</h2> </li>
+                <li class="glide__slide"><img src="9e9917d2-39a6-492c-af6b-a233805c2a8d.webp" name="Snickerdoodles" onclick="SetImageName(this.name)"><h2>36</h2></li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+    </div>
+    <button onClick="window.location.reload();">Clear</button>
+</div>
+
+<input type="text" value="" id="ImageName" name="ImageName">
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="js/script.js"></script>
+
+  </body>
+</html>

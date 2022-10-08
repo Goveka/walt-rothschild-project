@@ -1,0 +1,64 @@
+  h1 {
+      text-align: center;
+  }
+  
+  h3 {
+      text-align: left;
+  }
+  
+  .box {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .wrapper {
+      border: 15px solid green;
+  }
+  
+  .list {
+      text-align: center;
+  }
+  
+  ul {
+      text-align: center;
+      list-style: inside;
+      list-style-type: none;
+  }
+  
+  .container {
+      width: 50%;
+      margin: 0 auto;
+      height: 100vh;
+      position: relative;
+  }
+  
+  img {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+  }
+  
+  img.selected {
+      border: 5px solid red;
+  }
+  
+  body {
+      background-color: rgba(82, 82, 82, 0.596);
+  }
+  
+  button {
+      background-color: #ffffff;
+      border: none;
+      color: rgb(5, 5, 5);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      align-items: center;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+  }
